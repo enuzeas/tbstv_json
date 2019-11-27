@@ -107,6 +107,6 @@ df.set_index('idx',inplace=True)    ## idx as a index inplaced
 df[['datetime','trff_ymd','trff_time','trff_run','trff_typ','pgm_id','pgm_nm','mc_nm','pd_nm']].to_json(PATH+'db_efm.json', orient='index')
 #df.set_index('datetime',inplace=True)
 #df.to_json(PATH+'db_efm_{}.json'.format(today),orient='index')
-df.to_csv(PATH+'tbsefm_schedule_{}.csv'.format(today),index=False)
+#df.to_csv(PATH+'tbsefm_schedule_{}.csv'.format(today),index=False)
 #df.set_index('datetime',inplace=True)
 df[['datetime','chan_cd','trff_ymd','trff_time','trff_run','trff_typ','pgm_id','pgm_nm','mc_nm','pd_nm']].to_csv(PATH2+'tbsefm_schedule_{}.csv'.format(today),index=False)
